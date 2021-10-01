@@ -14,7 +14,7 @@ function noteHasIdParam(req, res, next) {
   } else {
     next({
       status: 404,
-      message: `Note id not found: ${req.params.noteId}`,
+      message: `Note id not found: ${noteId}`,
     })
   }
 };
